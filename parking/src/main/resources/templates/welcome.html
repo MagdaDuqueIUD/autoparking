@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            background-image: url('/parking/src/main/resources/static/background-parking.jpg');
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .container img {
+            width: 100px; /* Ajusta el tamaño del logo */
+            margin-bottom: 20px;
+        }
+
+        .container h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .container p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .container button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 32px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="/parking/src/main/resources/static/car-icon.png" alt="Car Icon"> <!-- Imagen pequeña de auto -->
+        <h1>Bienvenido a Auto Parking Colombia</h1>
+        <p>¡Estamos encantados de tenerte con nosotros! Haz clic en el botón para comenzar.</p>
+        <form action="/start" method="get">
+            <button type="submit">Comenzar</button>
+        </form>
+    </div>
+</body>
+</html>

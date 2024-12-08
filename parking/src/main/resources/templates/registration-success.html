@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Exitoso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url('/parking/src/main/resources/static/background-parking.jpg');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 350px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .container h1 {
+            font-size: 24px;
+            color: green;
+        }
+
+        .container p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .container .back-link a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 16px;
+        }
+
+        .container .back-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="/parking/src/main/resources/static/car-icon.png" alt="Car Icon" width="50" height="50"> <!-- Imagen pequeña de auto -->
+        <h1>¡Registro Exitoso!</h1>
+        <p>Su cuenta ha sido registrada correctamente. Ahora puede iniciar sesión.</p>
+        <div class="back-link">
+            <a href="/">Volver al inicio</a> <!-- Redirige a la página de login -->
+        </div>
+    </div>
+</body>
+</html>
